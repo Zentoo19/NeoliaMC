@@ -1,4 +1,4 @@
-# Répertoire des bugs ou des idées pour le serveur Faction
+# Répertoire des bugs ou des idées pour le serveur NeoliaMC
 
 # Comment signaler un bug?
 
