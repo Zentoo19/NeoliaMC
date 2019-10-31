@@ -102,73 +102,72 @@ COMMAND:
         RANK:
           CONTROL: '&c[!] Moderators can''t control each other...'
       MOD:
-        REQUIRED: '&c[!] You must be a faction moderator to do that.'
+        REQUIRED: '&c[!] Vous devez être modérateur de votre faction pour faire ça'
   UPGRADES:
-    DESCRIPTION: '&cOpen the Upgrades Menu'
+    DESCRIPTION: '&cOuvrir le menu des améliorations'
   ADMIN:
-    NOTMEMBER: '&c&l[!] &7%1$s &cis not a member in your faction.'
-    NOTADMIN: '&c&l[!] &cYou are not the faction admin.'
-    TARGETSELF: '''&c&l[!] &cThe target player musn''''t be yourself.'
-    DEMOTES: '&c&l[!] &cYou have demoted &7%1$s &cfrom the position of faction admin.'
-    DEMOTED: '&c&l[!] &cYou have been demoted from the position of faction admin by
+    NOTMEMBER: '&c&l[!] &7%1$s &cn''est pas membre de votre faction'
+    NOTADMIN: '&c&l[!] &cVous n''êtes pas officier de la faction.'
+    TARGETSELF: '''&c&l[!] &cVous ne pouvez pas vous choisir comme cible.'
+    DEMOTES: '&c&l[!] &cVous avez rétrogradé  &7%1$s &cdu rang officier.'
+    DEMOTED: '&c&l[!] &cVous avez été rétrogradé du rang d''officier par
       &7%1$s&c'
-    PROMOTES: '&e&l[!] &eYou have promoted &6%1$s &eto the position of faction admin.'
-    PROMOTED: '&e&l[!] &6%1$s &egave &6%2$s &ethe leadership of &6%3$s&e.'
+    PROMOTES: '&e&l[!] &eVous avez promu &6%1$s &eau rang d''Officier'
+    PROMOTED: '&e&l[!] &6%1$s &ea donné à &6%2$s &ela direction de la faction &6%3$s&e.'
     DESCRIPTION: Hand over your admin rights
-    NOMEMBERS: '&e&l[!] &cNo one else to promote, please disband faction.'
+    NOMEMBERS: '&e&l[!] &cPersonne d''autres à promouvoir, veuillez dissoudre votre faction'
   AHOME:
     DESCRIPTION: Send a player to their f home no matter what.
-    NOHOME: '%1$s doesn''t have an f home.'
+    NOHOME: '%1$s n''a pas de f home.'
     SUCCESS: $1%s was sent to their f home.
-    OFFLINE: '%1$s is offline.'
-    TARGET: You were sent to your f home.
+    OFFLINE: '%1$s est hors-ligne.'
+    TARGET: Vous avez été téléporté à votre f home.
   ANNOUNCE:
-    DESCRIPTION: Announce a message to players in faction.
+    DESCRIPTION: Annoncer un message aux joueurs de votre faction.
   ALTS:
     LIST:
-      FORMAT: '%1$s Power: %2$s Last Seen: %3$s'
-      DESCRIPTION: List all alts in your faction
-    DESCRIPTION: Faction Alts Commands
+      FORMAT: '%1$s Power: %2$s Vu pour la dernière fois: %3$s'
+      DESCRIPTION: Liste de tout les alts de votre faction
+    DESCRIPTION: Commande des alts de votre faction
   ALTINVITE:
-    DESCRIPTION: Invite Alts to your faction.
+    DESCRIPTION: Inviter des alts dans votre faction
     INVITED:
-      ALT: '&c&l[!]&7 &c%1$s&7 invited &c%2$s&7 to your faction as an alt.'
+      ALT: '&c&l[!]&7 &c%1$s&7 a invité &c%2$s&7 dans votre faction comme un alt.'
   ALTKICK:
-    DESCRIPTION: Kick alts from your faction
-    NOTALT: '&c&l[!] &7Player is not an alt.'
-    NOTMEMBER: '&c&l[!] &7This player is not a member of your faction.'
+    DESCRIPTION: Exclure les alts de votre faction.
+    NOTALT: '&c&l[!] &7Ce joueur n''est pas un alt.'
+    NOTMEMBER: '&c&l[!] &7Ce joueur n''est pas membre de votre faction.'
   AUTOCLAIM:
     ENABLED: '&c&l[!] &7Now &cauto-claiming&7 land for %1$s.'
-    DISABLED: '&c&l[!] Auto-claiming&7 of land is now &cdisabled.'
-    REQUIREDRANK: '&c&l[!] &7You must be &c%1$s&7 to claim land.'
-    OTHERFACTION: '&c&l[!]&7 You &ccan''t &7claim land for &c%1$s&7.'
-    DESCRIPTION: Auto-claim land as you walk around
+    DISABLED: '&c&l[!] La réclamation automatique&7 de territoire est maintenant &cdésactivé.'
+    REQUIREDRANK: '&c&l[!] &7Vous devez être &c%1$s&7 pour réclamer ce territoire .'
+    OTHERFACTION: '&c&l[!]&7 Vous &cne pouvez pas &7réclamer ce territoire de &c%1$s&7.'
+    DESCRIPTION: Réclamer automatiquement un territoire en marchant
   AUTOHELP:
-    HELPFOR: Help for command "
+    HELPFOR: Aide pour les commandes "
   BAN:
-    DESCRIPTION: Ban players from joining your Faction.
-    TARGET: '&c&l[!] &7You were &cbanned &7from &c%1$s'
-    BANNED: '&c&l[!] &7%1$s &cbanned &7%2$s'
-    SELF: '&c&l[!] &7You may &cnot &7ban &cyourself&7.'
-    INSUFFICIENTRANK: '&c&l[!] &7Your &crank &7is too low to&c ban &7%1$s'
-    ALREADYBANNED: '&c&l[!] &7This player is &calready banned&7!'
+    DESCRIPTION: Interdire aux joueurs de rejoindre votre faction.
+    TARGET: '&c&l[!] &7Vous avez été &cbanni &7de &c%1$s'
+    BANNED: '&c&l[!] &7%1$s &ca banni &7%2$s'
+    SELF: '&c&l[!] &7Vous ne pouvez &cpas &7vous ban &cvous-même&7.'
+    INSUFFICIENTRANK: '&c&l[!] &7Votre &cgrade &7est insuffisant pour&c bannir &7%1$s'
+    ALREADYBANNED: '&c&l[!] &7Ce joueur est &cdéjà banni&7!'
   BANLIST:
-    DESCRIPTION: View a Faction's ban list
-    HEADER: '&c&l[!] &7There are &c%d&7 bans for &c%s'
+    DESCRIPTION: Voir la liste des joueurs banni de votre faction
+    HEADER: '&c&l[!] &7Il y a &c%d&7 bans pour &c%s'
     ENTRY: '&7%1$s. &c%2$s &r&7// &c%3$s &r&7// &c%4$s'
-    NOFACTION: '&c&l[!] &7You are &cnot &7in a Faction.'
-    INVALID: '&c&l[!] &7The faction &c%1$s &7does not exist'
+    NOFACTION: '&c&l[!] &7Vous n''êtes &cpas &7dans une faction.'
+    INVALID: '&c&l[!] &7La faction &c%1$s &7n''existe pas'
   BOOM:
-    PEACEFULONLY: '&c&l[!] &7This command is &conly &7usable by factions which are
-      &cspecifically &7designated as &cpeaceful&7.'
-    TOTOGGLE: to toggle explosions
+    PEACEFULONLY: '&c&l[!] &7Cette commande est &cseulement &7utilisable par les faction qui sont
+      &cspécifiquement &7désignée comme &cpacifique&7.'
+    TOTOGGLE: Pour activer les explosions
     FORTOGGLE: for toggling explosions
     ENABLED: '&c&l[!] &c%1$s&7 has&c %2$s&7 explosions in your faction''s territory.'
     DESCRIPTION: Toggle explosions (peaceful factions only)
   BYPASS:
-    ENABLE: '&e&l[!] &eYou have enabled admin bypass mode. You will be able to build
-      or destroy anywhere.'
-    ENABLELOG: ' has ENABLED admin bypass mode.'
+    ENABLE: '&e&l[!] &eVous avez activé le bypass mode. Vous pouvez construire et détruire où vous voulez.'
+    ENABLELOG: ' a activé admin bypass mode.'
     DISABLE: '&c&l[!] &cYou have disabled admin bypass mode.'
     DISABLELOG: ' has DISABLED admin bypass mode.'
     DESCRIPTION: Enable admin bypass mode
